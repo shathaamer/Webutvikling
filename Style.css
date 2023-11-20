@@ -1,0 +1,520 @@
+head{
+    display:none;
+}
+#hjemmeside{
+    height: 100vh;
+    background-image: url(bilder/oslomet-bilde2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+#førsteside-header {
+    width: 70vw;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: auto;
+    margin-bottom: 20%;
+}
+#title{
+    display: inline;
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
+    color: rgb(14, 2, 26);
+    font-size: 1.5em;
+    
+}
+h1 {
+    color: white;
+    position: relative;
+    top: -10px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+@media screen and (max-width: 670px)
+{
+h1 {
+    font-size: 0.8em;
+    }
+        }
+#paragraf{
+    display: flex;
+    align-self: center;
+    width: 50vw;
+    font-size: 0.9em;
+    text-transform: none;
+    text-align: center;
+    margin: 0;
+}
+@media screen and (max-width: 670px){
+#presentasjon {
+    font-size: 0.8rem;
+    text-align: left;
+    display: inline-block;
+    text-align: center;
+}}
+p {
+    width: 30vw;
+    line-height: 1.5;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#navbar-førsteside{
+    width: 70vw;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+nav {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    overflow: auto; 
+    z-index: 2;
+}
+nav {
+    display: block;
+}
+@media screen and (max-width: 670px){
+nav {
+    font-size: 0.6rem;
+    align-items: center;
+    height: 45px;
+}}
+
+.navbar-text{
+    color: rgb(113, 89, 129);
+    pointer-events: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a {
+    display: inline-block;
+    position: relative;
+    color: rgb(14, 2, 26);
+    text-decoration: underline;
+    padding: 1em;
+}
+@media screen and (max-width: 670px){
+nav a {
+    display: inline-block;
+    text-align: center;
+}}
+@media screen and (max-width: 960px) and (min-width: 670px){
+    #navbar-førsteside {
+        font-size: 0.8rem;
+    }}
+
+
+/*nå er vi ferdig fra den første siden "Home Page"*/
+
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+@media screen and (max-width: 670px){
+.header-bilde {
+    height: 0.8em;
+}}
+.header-bilde {
+    background-image: url(bilder/oslomet-bilde2-header.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 13rem;
+    padding: 2.5rem 0 2.5rem;
+}
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+div {
+    display: block;
+}
+h1 {
+    color: gold;
+    position: relative;
+    top: -10px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    display:flex;
+    justify-content: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+@media screen and (max-width: 670px){
+h1 {
+    font-size: 1.5em;
+}}
+nav {
+    display: block;
+}
+nav {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    /* overflow: auto; */
+    z-index: 2;
+}
+@media screen and (max-width: 670px){
+nav {
+    font-size: 0.6rem;
+    align-items: center;
+    height: 45px;
+}}
+nav a {
+    display: inline-block;
+    position: relative;
+    color: rgb(14, 2, 26);
+    text-decoration: underline;
+    padding: 1em;
+}
+@media screen and (max-width: 670px){
+nav a {
+    display: inline-block;
+    text-align: center;
+}}
+@media screen and (max-width: 670px){
+footer {
+    font-size: 0.6em;
+}}
+footer {
+    background-image: url(bilder/oslomet-bilde2-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 8rem;
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+footer {
+    display: block;
+}
+@media screen and (max-width: 670px){
+footer p {
+    padding-top: 1em;
+    width: 60vw;
+    
+}}
+
+p {
+    width: 30vw;
+    line-height: 1.5;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*-------------------------------------------------------------*/
+
+/*library side*/
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 15px 5rem;
+    padding: 2rem;
+}
+article {
+    display: block;
+}
+@media screen and (max-width: 670px){
+article {
+    margin: 0;
+    margin-top: -2rem;
+}}
+@media screen and (max-width: 960px) and (min-width: 670px){
+article div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}}
+.titlen{
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    height: 2rem;
+    background-color: white;
+    margin-left: -5em;
+    margin-right: -3em;
+    
+}
+@media screen and (max-width: 670px){
+.titlen {
+    width: 100vw;
+    height: 1em;
+    margin-right: -7em;
+    margin-left: -7em;
+    padding-left: 5em;
+}
+}
+.figuren{
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    height: 2rem;
+    background-color: white;
+    margin-left: -5em;
+    margin-right: -5em;
+}
+@media screen and (max-width: 670px){
+.figuren {
+    width: 100vw;
+    height: 1em;
+    margin-right: -7em;
+    margin-left: -7em;
+    padding-left: 5em;
+}}
+@media screen and(max-width: 670px){
+    figure {
+        margin: 0.5rem;
+    }
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+@media screen and (max-width: 670px){
+#figuren > div {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+}}
+#figuren > div {
+    margin: -2.5rem;
+}
+img {
+    overflow: hidden;
+}
+
+img {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+#figuren img {
+    width: 20rem;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding-bottom: 1rem;
+}
+@media screen and (max-width: 960px)and (min-width: 670px){
+#figuren img {
+    width: 7rem;
+    height: 7rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}}
+.paragraph-text {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 670px){
+.paragraph-text {
+    align-items: center;
+}}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+@media screen and (max-width: 670px){
+h3 {
+    font-size: 0.8em;
+}}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 670px){
+h2 {
+    font-size: 1em;
+    overflow-x: hidden;
+}}
+@media screen and (max-width: 670px){
+.titlen h2 {
+    margin-bottom: -1em;
+ } 
+  }
+
+.paragraf-intro{
+    text-align: center;
+}
+@media screen and (max-width: 670px){
+.paragraf-intro {
+    width: auto;
+    align-items: center;
+    margin-top: -2rem;
+}}
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+
+@media screen and (max-width: 670px){
+article div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}}
+
+.paragraf-intro p {
+    width: 50vw;
+    font-size: 18px;
+  
+}
+@media screen and (max-width: 670px){
+.paragraf-intro p {
+    font-size: 1em;
+   
+    text-align: center;
+    width: 70vw;
+}}
+p {
+    width: 30vw;
+    line-height: 1.5;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+@media screen and (max-width: 670px){
+article p {
+    width: 70vw;
+}}
+@media screen and (max-width: 960px) and (min-width: 670px){
+p {
+    width: 60vw;
+}
+}
+.paragraf-img {
+    width: 40%;
+    max-width: 30rem;
+}
+video{
+    width: 100%;
+    max-width: 40rem;
+   
+}
+video{
+display: flex;
+justify-content: flex-end;
+align-self: center;
+}
+@media screen and (max-width: 670px){
+    video {
+        width: 50vw;
+        margin-top: 2em;
+        margin-left: 11em;
+     
+    }
+}
+@media screen and (max-width: 960px) and (min-width: 670px){
+    video {
+        width: 100%;
+        margin-left: 11em;
+    }}
+@media screen and (max-width: 670px){
+.paragraf-img {
+    width: 50vw;
+    margin-top: 2em;
+}
+}
+@media screen and (max-width: 960px) and (min-width: 670px){
+.paragraf-img {
+    width: 55%;
+}}
+
+.paragraf-text {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 670px){
+.paragraf-text {
+    align-items: center;
+}}
+.topp {
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+}
+/*----------------Accessibility side---------------------*/
+/* https://jessheimpuls.no/jp/wp-content/uploads/2021/03/JessOsloMet2-scaled-e1614862641567.jpg  */
