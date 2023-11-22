@@ -10,8 +10,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
     margin: 0;
-    display: block; 
-    margin: 8px; 
+    display: block;
+    margin: 8px;
 }
 
 /* Styling for the hjemmeside med ID "hjemmeside" */
@@ -34,20 +34,20 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 20%;
-  
-}/*style til førsteside med et skjerm i 670 piksler*/
-@media  screen and (max-width: 670px) {
-    #førsteside-header{
-margin-top: -3rem;
-padding-top: 2rem;
-    }
-    
-}/* style for skjermer med en bredde på minimum 670 piksler og maksimalt 960 piksler. */
-@media screen and (max-width: 960px) and (min-width: 670px){
-    #førsteside-header{
+}
+/*style til førsteside med et skjerm i 670 piksler*/
+@media screen and (max-width: 670px) {
+    #førsteside-header {
         margin-top: -3rem;
         padding-top: 2rem;
-            }
+    }
+}
+/* style for skjermer med en bredde på minimum 670 piksler og maksimalt 960 piksler. */
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    #førsteside-header {
+        margin-top: -3rem;
+        padding-top: 2rem;
+    }
 }
 /*.................................................*/
 /* Stylen til titelen i forskjellige størresler av skjerm*/
@@ -57,24 +57,28 @@ padding-top: 2rem;
     padding: 1rem 1rem 0 1rem;
     color: rgb(14, 2, 26);
 }
-@media  screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
     #title {
         display: inline;
         text-align: center;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-#title {
-    display: inline;
-    text-align: center;
-}}
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    #title {
+        display: inline;
+        text-align: center;
+    }
+}
 /*..................................................*/
 /* Stylen til h1 i forskjellige størresler av skjerm*/
 
 h1 {
     display: block;
     font-size: 1.8em;
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: center;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -82,20 +86,24 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-@media screen and (max-width: 670px){
-h1 {
-    font-size: 1em;
-    margin-top: -0.5em;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-h1 {
-    font-size: 1.4em;
-    margin-top: -0.5em;
-}}
 
- /*.....................................................*/  
- /* Stylen til h2 i forskjellige størresler av skjerm*/ 
- h2 {
+@media screen and (max-width: 670px) {
+    h1 {
+        font-size: 1em;
+        margin-top: -0.5em;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    h1 {
+        font-size: 1.4em;
+        margin-top: -0.5em;
+    }
+}
+
+/*.....................................................*/
+/* Stylen til h2 i forskjellige størresler av skjerm*/
+h2 {
     display: block;
     font-size: 1.2em;
     margin-block-start: 0.83em;
@@ -104,20 +112,25 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 h2 {
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 670px){
-h2 {
-    font-size: 1em;
-    overflow-x: hidden;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-h2 {
-    font-size: 0.8em;
-}}
-/*.......................................................*/ 
+
+@media screen and (max-width: 670px) {
+    h2 {
+        font-size: 1em;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    h2 {
+        font-size: 0.8em;
+    }
+}
+/*.......................................................*/
 h3 {
     display: block;
     font-size: 1em;
@@ -127,10 +140,12 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-@media screen and (max-width: 670px){
-h3 {
-    font-size: 0.8em;
-}}
+
+@media screen and (max-width: 670px) {
+    h3 {
+        font-size: 0.8em;
+    }
+}
 
 /*..................................................*/
 
@@ -144,9 +159,9 @@ h3 {
     text-align: center;
     margin: 0;
 }
-    /* Responsive styling for smaller screens */
-    @media screen and (max-width: 670px) {
-        #paragraf{
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 670px) {
+    #paragraf {
         font-size: 0.8rem;
         text-align: left;
         display: inline-block; /* Consider removing this line */
@@ -171,7 +186,6 @@ p {
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.0);
     margin-top: -25px;
     margin: 0.5rem 0 0.5rem 0;
-
     /* stylen for skjerm med 670 pikseler */
     @media screen and (max-width: 670px) {
         font-size: 0.8rem;
@@ -183,24 +197,22 @@ p {
         flex-direction: column;
         height: auto;
     }
-
     /* stylen for skjerm mellom 670px og 960px */
     @media screen and (max-width: 960px) and (min-width: 670px) {
         font-size: 0.8rem;
     }
 }
-/*..................................................*/
-/* Stylen for navigasjon lenk "navbar-førsteside"  */
-#navbar-førsteside a {
-    display: inline-block;
-    text-align: center;
-
-    /*  stylen for skjerm mellom 670px og 960px */
-    @media screen and (max-width: 960px) and (min-width: 670px) {
+    /*..................................................*/
+    /* Stylen for navigasjon lenk "navbar-førsteside"  */
+    #navbar-førsteside a {
         display: inline-block;
         text-align: center;
+        /*  stylen for skjerm mellom 670px og 960px */
+        @media screen and (max-width: 960px) and (min-width: 670px) {
+            display: inline-block;
+            text-align: center;
+        }
     }
-}
 /*......................................................*/
 /* stylen for navigasjon  */
 nav {
@@ -216,9 +228,9 @@ nav {
     top: 0;
     width: 100vw;
 }
-    /* stylen for nav for skjerm med 670 pikseler */
-    @media screen and (max-width: 670px) {
-        nav{
+/* stylen for nav for skjerm med 670 pikseler */
+@media screen and (max-width: 670px) {
+    nav {
         font-size: 0.6rem;
         height: 45px;
         align-items: center;
@@ -239,9 +251,9 @@ nav a {
     text-decoration: underline;
     padding: 1em;
 }
-   /* stylen for lenker i nav for skjerm med 670 pikseler */
-    @media screen and (max-width: 670px) {
-        nav a{
+/* stylen for lenker i nav for skjerm med 670 pikseler */
+@media screen and (max-width: 670px) {
+    nav a {
         display: inline-block;
         text-align: center;
     }
@@ -252,7 +264,7 @@ nav a {
 
 /*stylen til bildet som står i header med forskjellige størrelser av skjerm*/
 .header-bilde {
-    background-image: url(bilder/header-ny-1.jpg);
+    background-image: url(bilder/oslomet-bilde2-header.jpg);
     background-position: center;
     background-size: cover;
     text-shadow: 4px 4px 8px #000000;
@@ -260,15 +272,19 @@ nav a {
     height: 4.5rem;
     padding: 2.5rem 0 2.5rem;
 }
-@media screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
     .header-bilde {
         height: 0.8em;
         background-color: rgb(49, 48, 48);
-    }}
-    @media screen and (max-width: 960px) and (min-width: 670px){
-.header-bilde {
-    height: 2em;
-}}
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .header-bilde {
+        height: 2em;
+    }
+}
 /*..................................................*/
 
 
@@ -277,6 +293,7 @@ div {
     justify-content: space-around;
     padding: 2rem 0;
 }
+
 div {
     display: block;
 }
@@ -285,6 +302,7 @@ div {
 nav {
     display: block;
 }
+
 nav {
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
     display: flex;
@@ -298,12 +316,14 @@ nav {
     /* overflow: auto; */
     z-index: 2;
 }
-@media screen and (max-width: 670px){
-nav {
-    font-size: 0.6rem;
-    align-items: center;
-    height: 45px;
-}}
+
+@media screen and (max-width: 670px) {
+    nav {
+        font-size: 0.6rem;
+        align-items: center;
+        height: 45px;
+    }
+}
 
 .hjemmeside {
     color: rgb(113, 89, 129);
@@ -313,20 +333,22 @@ nav {
 }
 
 /*........................................*/
-@media screen and (max-width: 670px){
-.titlen h2 {
-    margin-bottom: -1em;
- } 
-  }
-  @media screen and (max-width: 960px) and (min-width: 670px){
-.titlen h2 {
-    margin-bottom: -1em;
-}}
+@media screen and (max-width: 670px) {
+    .titlen h2 {
+        margin-bottom: -1em;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .titlen h2 {
+        margin-bottom: -1em;
+    }
+}
 /*........................................*/
 
 /*footer stylen og til paragraf i footer */
 footer {
-    background-image: url(bilder/footer-ny.jpg);
+    background-image: url(bilder/oslomet-bilde2-footer.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -336,48 +358,42 @@ footer {
     height: 12rem;
     width: 100vw;
     font-weight: bold;
-   
-padding-top: 2%;
-    
-   
-}
-footer p{
-    color:white;
-    font-weight: bold;
+    padding-top: 2%;
 }
 
-    /*........................................*/
-@media screen and (max-width: 670px){
-footer p {
-    padding-top: 1em;
-    width: 60vw;
-    color:white;
-    font-weight: bold;
-   
-    
-    
-}}
+    footer p {
+        color: white;
+        font-weight: bold;
+    }
+
+/*........................................*/
+@media screen and (max-width: 670px) {
+    footer p {
+        padding-top: 1em;
+        width: 60vw;
+        color: white;
+        font-weight: bold;
+    }
+}
 /*stylen til lenker i footer */
 footer a {
-   
-    color:white;
+    color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
-   
 }
-@media screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
     footer a {
-        
         color: white;
         font-weight: bold;
         display: flex;
         justify-content: center;
-       
-    }}
+    }
+}
 /*-------------------------------------------------------------*/
 
-/*stylen til article i de fire sider i forskjellige størrelser*/ 
+/*stylen til article i de fire sider i forskjellige størrelser*/
 article {
     display: flex;
     flex-direction: column;
@@ -386,23 +402,28 @@ article {
     margin: 15px 5rem;
     padding: 2rem;
 }
+
 article {
     display: block;
 }
-@media screen and (max-width: 670px){
-article {
-    margin: 0;
-    margin-top: -2rem;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-article div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}}
+
+@media screen and (max-width: 670px) {
+    article {
+        margin: 0;
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    article div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 /*...................................................*/
 /*stylen til div som har den første paragraf i de fire sider som har en class "titlen"*/
-.titlen{
+.titlen {
     display: flex;
     position: sticky;
     top: 1rem;
@@ -411,41 +432,47 @@ article div {
     background-color: white;
     margin-left: -5em;
     margin-right: -3em;
-    
 }
-@media screen and (max-width: 670px){
-.titlen {
-    width: 100vw;
-    height: 1em;
-    margin-right: -7em;
-    margin-left: -7em;
-    padding-left: 5em;
+
+@media screen and (max-width: 670px) {
+    .titlen {
+        width: 100vw;
+        height: 1em;
+        margin-right: -7em;
+        margin-left: -7em;
+        padding-left: 5em;
+    }
 }
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .titlen {
+        width: auto;
+        height: 1em;
+        margin-right: -6em;
+        margin-left: -6em;
+    }
 }
-@media screen and (max-width: 960px) and (min-width: 670px){
-.titlen {
-    width: auto;
-    height: 1em;
-    margin-right: -6em;
-    margin-left: -6em;
-}}
 /*...........................................................*/
 /*stylen til paragraf i de fire sidene*/
-.paragraf-intro{
+.paragraf-intro {
     text-align: center;
 }
-@media screen and (max-width: 670px){
-.paragraf-intro {
-    width: auto;
-    align-items: center;
-    margin-top: -2rem;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
+
+@media screen and (max-width: 670px) {
     .paragraf-intro {
-    width: auto;
-    font-size: 1em;
-    align-items: center;
-}}
+        width: auto;
+        align-items: center;
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .paragraf-intro {
+        width: auto;
+        font-size: 1em;
+        align-items: center;
+    }
+}
 
 /*......................................*/
 /*stylen til figuren som inneholder tre bildene i biblioteket side */
@@ -456,17 +483,21 @@ figure {
     margin-inline-start: 40px;
     margin-inline-end: 40px;
 }
-@media screen and(max-width: 670px){
+
+@media screen and(max-width: 670px) {
     figure {
         margin: 0.5rem;
     }
 }
-@media screen and (max-width: 960px) and (min-width: 670px){
-figure {
-    margin-block: 1.5vw;
-    margin-inline: 1vw;
-}}
-#figuren{
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    figure {
+        margin-block: 1.5vw;
+        margin-inline: 1vw;
+    }
+}
+
+#figuren {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,31 +510,33 @@ figcaption {
     margin-left: -2rem;
     margin-right: -2rem;
 }
+
 figcaption {
     display: block;
 }
 /*......................................*/
 #figuren > div {
-   
     display: flex;
     flex-direction: row;
     width: 60vw;
-    
 }
-@media screen and (max-width: 670px){
-#figuren > div {
-    
-    display: flex;
-    flex-direction: row;
-    width: 30vw;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-#figuren > div {
-    display: flex;
-    flex-direction: row;
-    width:40vw;
-    margin-bottom: 1rem;
-}}
+
+@media screen and (max-width: 670px) {
+    #figuren > div {
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    #figuren > div {
+        display: flex;
+        flex-direction: row;
+        width: 40vw;
+        margin-bottom: 1rem;
+    }
+}
 /*.........................................*/
 /*stylen til de bildene som står i biblioteket og de restende bilder i sider*/
 img {
@@ -515,26 +548,32 @@ img {
     justify-content: flex-end;
     align-self: center;
 }
-img{
+
+img {
     overflow-clip-margin: content-box;
-    overflow:clip;
+    overflow: clip;
 }
+
 #figuren img {
     width: 30rem;
     margin-left: 1vw;
     margin-right: 1vw;
 }
-@media screen and (max-width: 670px){
-#figuren img {
-    width: 10rem;
-    padding-bottom: 1rem;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}}
-@media screen and (max-width: 960px)and (min-width: 670px){
-#figuren img {
-    width: 30vw;
-}}
+
+@media screen and (max-width: 670px) {
+    #figuren img {
+        width: 10rem;
+        padding-bottom: 1rem;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}
+
+@media screen and (max-width: 960px)and (min-width: 670px) {
+    #figuren img {
+        width: 30vw;
+    }
+}
 /*...........................................*/
 
 
@@ -545,43 +584,48 @@ div {
 }
 
 
-@media screen and (max-width: 670px){
-article div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-article div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}}
+@media screen and (max-width: 670px) {
+    article div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    article div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 /*.....................................................*/
 /*stylen til teksten som står i øveste av de sidene*/
 .paragraf-intro p {
     width: 50vw;
     font-size: 18px;
-  
 }
-@media screen and (max-width: 670px){
-.paragraf-intro p {
-    font-size: 1em;
-   
-    text-align: center;
-    width: 70vw;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-.paragraf-intro p {
-    width: 60vw;
-    text-align: center;
-}}
+
+@media screen and (max-width: 670px) {
+    .paragraf-intro p {
+        font-size: 1em;
+        text-align: center;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .paragraf-intro p {
+        width: 60vw;
+        text-align: center;
+    }
+}
 /*...........................................*/
 p {
     width: 30vw;
     line-height: 1.5;
-   
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -589,58 +633,64 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-@media screen and (max-width: 670px){
-article p {
-    width: 70vw;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-p {
-    width: 60vw;
+
+@media screen and (max-width: 670px) {
+    article p {
+        width: 70vw;
+    }
 }
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    p {
+        width: 60vw;
+    }
 }
 /*..................................................*/
 /*stylen til bildene som står ves siden av tekstene i sider */
 .paragraf-img {
     width: 40%;
     max-width: 30rem;
-    
-   
 }
-@media screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
     .paragraf-img {
         width: 50vw;
         margin-top: 2em;
     }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .paragraf-img {
+        width: 55%;
     }
-    @media screen and (max-width: 960px) and (min-width: 670px){
-        .paragraf-img {
-            width: 55%;
-        }}
- /*............................................*/
- /*stylen til video som står i kantene side */
-video{
+}
+/*............................................*/
+/*stylen til video som står i kantene side */
+video {
     width: 100%;
     max-width: 40rem;
-   
 }
-video{
-display: flex;
-justify-content: flex-end;
-align-self: center;
+
+video {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 }
-@media screen and (max-width: 670px){
+
+@media screen and (max-width: 670px) {
     video {
         width: 50vw;
         margin-top: 2em;
         margin-left: 11em;
-     
     }
 }
-@media screen and (max-width: 960px) and (min-width: 670px){
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
     video {
         width: 100%;
         margin-left: 11em;
-    }}
+    }
+}
 
 /*................................................*/
 /*stylen til tekstene som står ved siden av bildene*/
@@ -648,19 +698,25 @@ align-self: center;
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width: 670px){
-.paragraf-text {
-    align-items: center;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-.paragraf-text {
-    display: flex;
-    justify-content: center;
-}}
-@media screen and (max-width: 960px) and (min-width: 670px){
-.paragraf-text {
-    align-items: center;
-}}
+
+@media screen and (max-width: 670px) {
+    .paragraf-text {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .paragraf-text {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .paragraf-text {
+        align-items: center;
+    }
+}
 /*......................................................*/
 .topp {
     display: flex;
